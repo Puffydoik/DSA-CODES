@@ -25,7 +25,7 @@ int deleteStart(int arr[], int n) {
 }
 
 int deleteEnd(int arr[], int n) {
-    return (n == 0) ? 0 : n - 1;
+    return n-1;
 }
 
 int deletePosition(int arr[], int n, int pos) {
