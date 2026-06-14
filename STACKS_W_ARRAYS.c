@@ -42,7 +42,7 @@ void peek(){
     if(top == -1) {
         printf("Stack is empty\n");
     } else {
-        printf("The top element is:",stack[0])
+        printf("The top element is:%d",stack[0]);
             }
 }
 
@@ -51,7 +51,7 @@ int main() {
 
     while(1) {
         printf("\n--- STACK MENU ---\n");
-        printf("1. Push\n2. Pop\n3. Display\n4. Exit\n");
+        printf("1. Push\n2. Pop\n3. Display\n4. Peek\n5. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -71,6 +71,10 @@ int main() {
                 break;
 
             case 4:
+                peek();
+                break;
+                
+            case 5:
                 printf("Exiting...\n");
                 return 0;
 
