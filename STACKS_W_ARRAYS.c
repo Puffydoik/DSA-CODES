@@ -37,6 +37,15 @@ void display() {
     }
 }
 
+// Peek operation 
+void peek(){
+    if(top == -1) {
+        printf("Stack is empty\n");
+    } else {
+        printf("The top element is:",stack[0])
+            }
+}
+
 int main() {
     int choice, value;
 
